@@ -13,8 +13,8 @@ targets = np.load("50x50flowers_targets.npy")
 X_train, X_test, y_train, y_test = train_test_split(images, targets, test_size=0.2, random_state=42)
 
 #A deep convolutational neural network and three convoluation and maxpooing layer. 
-#Dropout used to avoid overfittting. 
-#i tried smaller network by reducing the number of convolution and dense layer and it felt like the model was not learning for it. 
+#Dropout used to avoid overfitting. 
+
 def get_model():
     model = models.Sequential()
     model.add(layers.Conv2D(32, kernel_size=(3, 3), input_shape=(50, 50, 3), activation="relu"))
@@ -66,9 +66,4 @@ plt.grid(axis='y', linestyle='-')
 plt.xlabel('Epochs')
 plt.ylabel('Training Loss')
 plt.grid(axis='x', linestyle='-')
-
-#this was the result, i got. 
-#The training score is [1.1867313385009766, 0.7195402383804321]
-#The testing score is [1.7000349760055542, 0.6213235259056091]
-
-#I have some experience in working with ANN, so i used to try to bring the overfiting down. 
+ 
