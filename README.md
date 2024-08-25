@@ -9,5 +9,5 @@ Their paper can be read here: Nilsback, M. E., & Zisserman, A. (2008). "Automate
 
 The best model I have found is a training accuracy of 71% and a test accuracy of 62 %. There is some overfitting but it could be because I have downsized the dataset. 
 
-#Disclaimer
+# Disclaimer
 Note: The code in this repository was developed by me as part of an online course assignment. The dataset used, the 17 Category Flower Dataset, is owned by the Visual Geometry Group at the University of Oxford. All rights to the dataset belong to its original creators. This code is provided for educational purposes and should not be used for commercial purposes without proper permissions from the dataset owners.
